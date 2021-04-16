@@ -51,11 +51,15 @@ par codePipeline
 https://www.youtube.com/watch?v=4tDjVFbi31o
 
 utilise github
+## A new repo from an existing project
 demmarrer gitBash dans repertoire /dashBuildDashboardSt/DashApp
 git init
+git add .
+git status
+git commit -m "text des modications"
 # ajout repose
-## A new repo from an existing project
-git remote add origin https://github.com/dhazel38/essai1.git
+
+##git remote add origin https://github.com/dhazel38/essai1.git
 $ git remote -v
 origin  https://github.com/dhazel38/essai1.git (fetch)
 origin  https://github.com/dhazel38/essai1.git (push)
@@ -63,4 +67,5 @@ origin  https://github.com/dhazel38/essai1.git (push)
 git remote remove origin
 git remote add origin https://github.com/dhazel38/flaskEssai.git
 git push master
+git push -u origin master
 
