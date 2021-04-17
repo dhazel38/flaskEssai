@@ -67,6 +67,5 @@ origin  https://github.com/dhazel38/essai1.git (push)
 git remote remove origin
 git remote add origin https://github.com/dhazel38/flaskEssai.git
 git remote -v
-git push master
-git push -u origin master
+git push -u origin master #  and '-u' flag is upstream, which is equivalent to '-set-upstream.' 
 
