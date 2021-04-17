@@ -98,6 +98,5 @@ def update_graph(selected_dropdown_value):
 app_basic = app.server  # for aws
 
 if __name__ == '__main__':
-    #app_basic.run(debug=True, port=8080)  # for aws
-    app_basic.run(debug=True)  # for aws my modif
+    app_basic.run(debug=True, port=8080)  # for aws
     #app.run_server(debug=True)
