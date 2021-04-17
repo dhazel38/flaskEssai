@@ -19,6 +19,8 @@ df.index = pd.to_datetime(df['Date'])
 # Initialize the app
 app = dash.Dash(__name__)
 app.config.suppress_callback_exceptions = True
+app.scripts.config.serve_locally = True  # for aws
+app.css.config.serve_locally = True  # for aws
 
 
 def get_options(list_stocks):
@@ -93,5 +95,9 @@ def update_graph(selected_dropdown_value):
     return figure
 
 
+app_basic = app.server  # for aws
+
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    #app_basic.run(debug=True, port=8080)  # for aws
+    app_basic.run(debug=True)  # for aws my modif
+    #app.run_server(debug=True)
